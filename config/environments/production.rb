@@ -32,7 +32,7 @@ Rails.application.configure do
   config.assets.css_compressor = false
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
@@ -76,9 +76,9 @@ Rails.application.configure do
 
   # Production email config
   config.action_mailer.delivery_method = :postmark
-  config.action_mailer.postmark_settings = {
-    api_token: ENV.fetch("POSTMARK_API_KEY")
-  }
+  # config.action_mailer.postmark_settings = {
+  #   api_token: ENV.fetch("POSTMARK_API_KEY")
+  # }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = {
     host: "kennethrosales",

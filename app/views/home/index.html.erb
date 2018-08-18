@@ -1,2 +1,188 @@
 <% provide(:title, "Home") %>
-<p>Find me in app/views/home/index.html.erb</p>
+  <%= render 'shared/header' %>
+  <div class="site-container">
+
+    <header class="site-header cf">
+
+      <div class="cf"></div>
+
+      <div class="site-tagline">
+        <p>Hello I'm
+          <strong>Kenneth Rosales.</strong><br>
+          I'm Software Engineer and my passion is creating, and I find happiness in being a better me today than the me yesterday.
+        </p>
+      </div>
+
+    </header>
+    <!-- / .site-header -->
+
+    <section class="site-content">
+
+      <div class="projects-feed cf">
+
+        <article class="project cf">
+          <a href="http://www.railsgirlscr.org/" title="Craft Tamale" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/rails-girls.png"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-1.jpg"></div> <![endif]-->
+                <%= image_tag "rails-girls.png" %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">Rails Girls Costa Rica</h2>
+
+                    <p class="thumbnail-description">Open Souce, MeetUp, Speaker</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+        <article class="project cf">
+          <a href="https://www.smarterselect.com/" title="IKEA Singapore" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/ss.png"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-2.jpg"></div> <![endif]-->
+                  <%= image_tag 'ss.png' %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">Smarter Select</h2>
+
+                    <p class="thumbnail-description">Web, Education, Corporations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+        <article class="project cf">
+          <a href="https://www.landlord-reference.com/" title="Comuna" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/la.png"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-3.jpg"></div> <![endif]-->
+                <%= image_tag 'la.png' %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">Landlord Reference</h2>
+
+                    <p class="thumbnail-description">Renters are more than their Credit Score</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+        <article class="project cf">
+          <a href="http://www.israel360.org/" title="Nike 'Strawberry Lace' Pack" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/israel360.png"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-4.jpg"></div> <![endif]-->
+
+                  <%= image_tag 'israel360.png' %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">Israel360</h2>
+
+                    <p class="thumbnail-description">Web, Social Network, Advertising</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+        <article class="project cf">
+          <a href="portfolio-item.html" title="Chamba para Creativos" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/ju.jpg"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-6.jpg"></div> <![endif]-->
+                <%= image_tag 'ju.png' %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">Jerusalem U</h2>
+
+                    <p class="thumbnail-description">Transformational education one film at a time</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+        <article class="project cf">
+          <a href="https://adoptame-cr.herokuapp.com/" title="Wearetheshit" target="_blank">
+            <div class="thumb">
+              <div data-picture="data-picture" data-alt="">
+                <div data-src="images/adopatme.png"></div>
+
+                <!--[if (lt IE 9) & (!IEMobile)]> <div data-src="img/portfolio-5.jpg"></div> <![endif]-->
+                <%= image_tag 'adopatme.png' %>
+              </div>
+            </div>
+
+            <div class="project-content-container">
+              <div class="project-content">
+                <div class="table">
+                  <div class="table-cell">
+                    <h2 class="thumbnail-title">AdoptameCR</h2>
+
+                    <p class="thumbnail-description">The national social network for adopt home animals in Costa Rica.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overlay"></div>
+          </a>
+        </article>
+
+        <!--END .projects-feed-->
+      </div>
+
+      <!--END .site-content-->
+    </section>
+    <%= render 'shared/footer' %>
+    <!--END .site-container-->
+  </div>
