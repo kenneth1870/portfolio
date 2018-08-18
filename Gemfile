@@ -18,6 +18,7 @@ gem "rails", "~> 5.2.0"
 gem "sass-rails", "~> 5.0"
 gem "sidekiq", ">= 4.2.0"
 gem "turbolinks", "~> 5"
+gem "puma", "~> 3.11"
 
 group :production, :staging do
   gem "postmark-rails"
@@ -45,7 +46,6 @@ group :development do
   gem "letter_opener"
   gem "listen", ">= 3.0.5"
   gem "net-ssh", ">= 5.0.0", require: false
-  gem "puma", "~> 3.11"
   gem "rack-livereload"
   gem "rubocop", ">= 0.58.0", require: false
   gem "simplecov", require: false
