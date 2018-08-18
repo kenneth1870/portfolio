@@ -45,7 +45,6 @@ group :development do
   gem "letter_opener"
   gem "listen", ">= 3.0.5"
   gem "net-ssh", ">= 5.0.0", require: false
-  gem "overcommit", ">= 0.37.0", require: false
   gem "puma", "~> 3.11"
   gem "rack-livereload"
   gem "rubocop", ">= 0.58.0", require: false
