@@ -1,0 +1,40 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  article_category_id :bigint(8)
+#  body                :text
+#  created_at          :datetime         not null
+#  date                :date
+#  id                  :bigint(8)        not null, primary key
+#  introduction        :text
+#  slug                :string
+#  title               :string
+#  updated_at          :datetime         not null
+#
+# Indexes
+#
+#  index_articles_on_article_category_id  (article_category_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (article_category_id => article_categories.id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  slug: MyString
+  introduction: MyText
+  body: MyText
+  date: 2018-08-31
+  article_category: one
+
+two:
+  title: MyString
+  slug: MyString
+  introduction: MyText
+  body: MyText
+  date: 2018-08-31
+  article_category: two

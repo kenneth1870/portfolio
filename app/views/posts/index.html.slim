@@ -1,0 +1,16 @@
+  == render 'shared/header'
+  /! / .site-header
+  section.site-content
+    .page-desc
+      h4 Blog
+      p These are some of the most important and relevant articles, please take a look at each one.
+    article.news
+    - @posts.each do |post|
+      .blog_item.full.grey_bg
+        = link_to '', post_path(post), class: "full_link"
+        .abs_bg style=("background-image: url('#{post.hero_image.asset}')")
+        .blog_item_inner
+          h1 ==  post.title
+          h5.date == post.introduction
+    /! END .site-content
+  == render 'shared/footer'
