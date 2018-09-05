@@ -1232,7 +1232,7 @@ nav[role="navigation"] {
     padding: 60px;
   }
   .page-desc {
-    width: 75%;
+    width: 100%;
   }
   .page-desc h1, .page-desc h2, .page-desc h3 {
     font-size: 2.8rem;
@@ -1447,7 +1447,7 @@ nav[role="navigation"] {
 
 @media only screen and (min-width: 1200px) {
   /*===== Structures =====*/
-  .site-header, .page-desc {
+  .site-header, .page-desc-posts {
     padding: 100px 200px;
   }
   .row {
